@@ -1,0 +1,10 @@
+{
+  "name": "prosignature",
+  "version": "1.0.0",
+  "description": "Email signatures by ProSignature: design and build an email-safe signature, quote prices, get install steps, and (with sign-in) manage your own ProSignature account and team.",
+  "mcpServers": {
+    "prosignature": { "httpUrl": "https://prosignature.co/mcp" },
+    "prosignature-account": { "httpUrl": "https://prosignature.co/mcp/account", "oauth": { "enabled": true } }
+  },
+  "contextFileName": "GEMINI.md"
+}

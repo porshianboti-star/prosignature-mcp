@@ -1,0 +1,9 @@
+{
+  "name": "prosignature",
+  "displayName": "ProSignature Email Signatures",
+  "description": "Design and build email-safe signatures, quote prices, get install steps, and manage your own ProSignature account and team.",
+  "version": "1.0.0",
+  "author": "ProSignature",
+  "homepage": "https://prosignature.co/connect-ai",
+  "license": "MIT"
+}

@@ -1,0 +1,6 @@
+{
+  "mcpServers": {
+    "prosignature": { "url": "https://prosignature.co/mcp" },
+    "prosignature-account": { "url": "https://prosignature.co/mcp/account" }
+  }
+}
