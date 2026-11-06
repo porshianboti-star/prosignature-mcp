@@ -1,0 +1,11 @@
+{
+  "name": "prosignature",
+  "version": "1.1.0",
+  "description": "Email signatures with ProSignature: a skill that designs, builds, installs and rolls out professional email signatures for Gmail, Google Workspace, Outlook, Microsoft 365 and Apple Mail, plus the ProSignature MCP servers (public, no account; and your own account over OAuth).",
+  "author": { "name": "ProSignature", "email": "porshianboti@gmail.com", "url": "https://prosignature.co" },
+  "homepage": "https://prosignature.co/connect-ai",
+  "repository": "https://github.com/porshianboti-star/prosignature-mcp",
+  "license": "MIT",
+  "keywords": ["email signature", "email signature generator", "gmail signature", "google workspace", "outlook signature", "html email signature", "team email signatures", "prosignature"],
+  "mcpServers": "./.mcp.json"
+}

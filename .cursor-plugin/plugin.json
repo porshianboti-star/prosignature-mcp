@@ -1,9 +1,19 @@
 {
   "name": "prosignature",
   "displayName": "ProSignature Email Signatures",
-  "description": "Design and build email-safe signatures, quote prices, get install steps, and manage your own ProSignature account and team.",
-  "version": "1.0.0",
+  "description": "Email signatures for Gmail, Google Workspace, Outlook and Apple Mail: design 3-4 professional signatures, build email-safe HTML, quote Pro and Teams prices, get install steps, and (with sign-in) manage your own ProSignature account and team.",
+  "version": "1.1.0",
   "author": "ProSignature",
   "homepage": "https://prosignature.co/connect-ai",
-  "license": "MIT"
+  "license": "MIT",
+  "keywords": [
+    "email signature",
+    "email signature generator",
+    "gmail signature",
+    "google workspace",
+    "outlook signature",
+    "team signatures",
+    "prosignature"
+  ],
+  "repository": "https://github.com/porshianboti-star/prosignature-mcp"
 }

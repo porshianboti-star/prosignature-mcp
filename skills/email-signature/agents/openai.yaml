@@ -1,0 +1,6 @@
+interface:
+  display_name: "Email signature (ProSignature)"
+  short_description: "Design, build and install a professional email signature for Gmail, Outlook or a whole team"
+  default_prompt: "Create a professional email signature for me"
+policy:
+  allow_implicit_invocation: true

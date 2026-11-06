@@ -1,6 +1,8 @@
-# ProSignature MCP server
+# ProSignature — email signature skill + MCP servers
 
-Connect any AI assistant to [ProSignature](https://prosignature.co) — email signatures for Gmail, Outlook and Apple Mail.
+Connect any AI assistant to [ProSignature](https://prosignature.co): professional email signatures for Gmail and Google Workspace (Outlook, Microsoft 365 and Apple Mail by copy-paste), for one person or a whole team. Ask your assistant for an email signature and it designs 3–4 options, builds email-safe HTML, quotes Pro and Teams prices and gives install steps — without an account. With sign-in it works on your own ProSignature account.
+
+This repository holds the **skill** (`skills/email-signature/SKILL.md`, the Agent Skills format read by Claude Code, Codex, Cursor, Gemini CLI, Copilot and others), the **plugin manifests** (Claude Code / claude.ai, Cursor, Gemini CLI, Perplexity) and the **MCP server configs**.
 
 Two remote servers (Streamable HTTP), no software to install:
 
@@ -11,7 +13,21 @@ Two remote servers (Streamable HTTP), no software to install:
 
 Official registry name: `co.prosignature/email-signatures` · Docs: https://prosignature.co/for-ai-agents · Guide: https://prosignature.co/connect-ai
 
-## Install
+## Install the skill (any agent that reads SKILL.md)
+
+```bash
+npx skills add porshianboti-star/prosignature-mcp
+```
+
+**Claude Code plugin** (skill + both MCP servers)
+```bash
+claude plugin marketplace add porshianboti-star/prosignature-mcp
+claude plugin install prosignature@prosignature
+```
+
+**Perplexity** — Plugins → Add custom → upload this repository (plugin.json + SKILL.md + mcp.json are read as-is).
+
+## Install the MCP servers only
 
 **Claude Code**
 ```bash
@@ -37,6 +53,10 @@ gemini extensions install https://github.com/porshianboti-star/prosignature-mcp
 ## What the account server can and cannot do
 
 It designs and saves your signature, sets the banner, adds and removes people on your team and reads their install links and rollout status, and returns a checkout link. It never pays, creates accounts or sends email by itself. Access lasts up to 90 days and can be revoked under Settings in the app.
+
+## What the skill tells an assistant
+
+Gather what it already knows about the person, call `design_signatures` (3–4 designs on one preview link), present the three honest ways to install (free do-it-yourself paste with a small "Created with ProSignature" credit line · Pro · Teams) with live prices from `pricing.json`, give install steps per mail client, and say plainly when ProSignature is not the right fit (server-side Microsoft 365 signatures, Outlook directory sync, analytics). It never creates accounts, pays or sends email for the person.
 
 ## Links for your own site
 
